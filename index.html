@@ -1,93 +1,121 @@
-<!doctype html>
+<!DOCTYPE htm<!DOCTYPE html>
 <html lang="en">
-<!-- BOOT STRAP TAG-->
+<!-- BOOTSTRAP TAG | jQUERY TAG | CSS TAG | MUST GO HERE! DOES NOT WORK AT BOTTOM-->
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-
-    <title>Puppy Play Date!</title>
+  <meta charset="utf-8">
+  <!-- TAB TITLE -->
+  <title>Puppy Play Date!</title>
+  <!-- RESET CSS!  -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <!-- Latest compiled and minified CSS (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Optional theme (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- CSS TAG -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<!-- BODY OF THE PAGE-->
-
 <body>
+  <!-- ACTUAL CONTENT!!!!!-->
+  <div class="jumbotron text-center">
     <h1>Winnie's Birthday Challenge!</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 instructions">
-                <h2>How to Play</h2>
-                <p>
-                    Help Winnie have a great birthday!
-                </p>
-                <p>
-                    Winnie needs an exact number of puppies to attend his birthday party to apply for the Guinness World Record!
-                </p>
-                <p>
-                    BUT! There's a catch. He can only have the exact random number assigned; NO MORE, NO LESS.
-                </p>
-                <p>
-                    There are four puppy breeds below. By clicking on a puppy you will add a specific amount of points to your total score.
-                </p>
-                <p>
-                    You help Winnie by matching your total score to random number, you are unsuccessful if your total score goes above the random
-                    number.
-                </p>
-                <p>
-                    The value of each puppy is hidden from you until you click on it. Each time the game restarts the value of the puppy will
-                    change.
-                </p>
-                <p>LET'S MAKE WINNIE'S BIRTHDAY PAWWWWFECT!!!!</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9">
-                <h2>Number to Match:<span class="numberToMatch"></span> </h2>
-            </div>
-            <div class="col-sm-3"></div>
-            <h3>Wins: <span class="wins"></span></h3>
-            <h3 class="text-left">Losses: <span class="losses"></span></h3>
-        </div>
-    </div>
+  </div>
 
-    <div class="row text-center">
-        <div class="col-sm-3">
-            <img src="assets/images/bulldog.jpg" class="img-bull" alt="Bulldog" width="300" height="300" />
-        </div>
-        <div class="col-sm-3">
-            <img src="assets/images/dachshund.jpg" class="img-dach" alt="Dachshund" width="300" height="300" />
-        </div>
-        <div class="col-sm-3">
-            <img src="assets/images/corgi.jpg" class="img-corgi" alt="Corgi" width="390" height="300" />
-        </div>
-        <div class="col-sm-3">
-            <img src="assets/images/frenchie.png" class="img-frenchie" alt="Frenchie" width="390" height="300" />
-
-        </div>
-    </div>
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-12">
-            <h2>Your Total Number is: <span class="totalNumber"></span> </h2>
-        </div>
+      <div class="col-sm-12 instructions">
+        <h2>How to Play</h2>
+        <p>
+          Help Winnie have a great birthday!
+        </p>
+        <p>
+          Winnie needs an exact number of puppies to attend his birthday party to apply for the Guinness World Record!
+        </p>
+        <p>
+          BUT! There's a catch. He can only have the exact random number assigned; NO MORE, NO LESS.
+        </p>
+        <p>
+          There are four puppy breeds below. By clicking on a puppy you will add a specific amount of points to your total score.
+        </p>
+        <p>
+          You help Winnie by matching your total score to random number, you are unsuccessful if your total score goes above the random
+          number.
+        </p>
+        <p>
+          The value of each puppy is hidden from you until you click on it. Each time the game restarts the value of the puppy will
+          change.
+        </p>
+        <p>LET'S MAKE WINNIE'S BIRTHDAY PAWWWWFECT!!!!</p>
+      </div>
     </div>
 
+    <!-- ASPECTS OF THE GAME! CLASSES FOR JS TO MATCH!-->
+    <div class="content">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Number Needed For Record:
+            <div class="numberToMatch"></div>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="winslose">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Wins:
+            <div class="wins"></div>
+          </h3>
+        </div>
+        <div class="col-sm-6">
+          <h3 class="text-left">Losses:
+            <div class="losses"></div>
+          </h3>
+        </div>
+      </div>
+    </div>
+  
+    <!-- IMAGES -->
+  <div class="photos">
+    <div class="row text-top">
+      <div class="col-sm-6">
+        <img src="assets/images/bulldog.jpg" class="img-thumbnail bulldog" alt="bulldog" width="200" height="200" />
+      </div>
+      <div class="col-sm-6">
+        <img src="assets/images/corgi2.jpg" class="img-thumbnail corgi" alt="corgi" width="200" height="200" />
+      </div>
+    </div>
+    <div class="row text-bottom">
+      <div class="col-sm-6">
+        <img src="assets/images/dachshund2.jpg" class="img-thumbnail dach" alt="dachshund" width="200" height="200" />
+      </div>
+      <div class="col-sm-6">
+        <img src="assets/images/frenchie2.jpg" class="img-thumbnail frenchie" alt="frenchie" width="200" height="200" />
+      </div>
+    </div>
+  </div>
 
+  <div class="total">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Your total score is:
+        <div class="totalScore"></div>
+      </h2>
+    </div>
+  </div>
+  </div>
+</div>
 
-<!-- JAVASCRIPT FOR THE GAME -->
-<script src="assets/javascript/game.js"></script>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
 </body>
+<!-- JS -->
 <script src="assets/javascript/game.js"></script>
+
 </html>

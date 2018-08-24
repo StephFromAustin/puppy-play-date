@@ -1,2 +1,58 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Bangers|Coming+Soon|Playfair+Display');
 
+  .jumbotron h1 {
+    color: #000;
+    text-shadow: 3px 3px #fff;
+    font-family: 'Coming Soon', cursive;
+    
   
+  }
+  
+  .instructions {
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+  }
+  
+ .content {
+      text-align: center;
+     float: center;
+     font-family: 'Bangers', cursive;
+ }
+
+ .winslose {
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 100px;
+  font-family: 'Bangers', cursive;
+   
+ }
+
+.bulldog {
+    border-width: 10px;
+    border-color: #000;
+    float: right;
+}
+
+.corgi {
+  border-width: 10px;
+  border-color: #000; 
+}
+
+.dach {
+  border-width: 10px;
+  border-color: #000;
+  float: right;
+  margin-top: 10px;
+}
+
+.frenchie {
+  border-width: 10px;
+  border-color: #000;
+  margin-top: 10px;
+}
+
+.total {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
