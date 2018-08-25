@@ -1,19 +1,33 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Bangers|Coming+Soon|Playfair+Display');
 
-  .jumbotron h1 {
+/* HEADING STYLE */
+  .jumbotron {
     color: #000;
-    text-shadow: 3px 3px #fff;
+    text-shadow: 3px 3px darkgray;
     font-family: 'Coming Soon', cursive;
-    
-  
+    font-size: 30px;
+    background-color: #17b35d;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2314c633'/%3E%3Cstop offset='1' stop-color='%2314c633' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231077ae'/%3E%3Cstop offset='1' stop-color='%231077ae' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230db3c1'/%3E%3Cstop offset='1' stop-color='%230db3c1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2317b35d'/%3E%3Cstop offset='1' stop-color='%2317b35d' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2325d911'/%3E%3Cstop offset='1' stop-color='%2325d911' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23320aa8'/%3E%3Cstop offset='1' stop-color='%23320aa8' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 12px;
+    border-bottom-color: #444;
   }
-  
+
+  /* BODY STYLE */
+  .container-fluid {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+/* INSTRUCTIONS STYLE */
   .instructions {
     text-align: center; 
     font-family: 'Playfair Display', serif;
   }
   
+/* CONTENT STYLE */
  .content {
       text-align: center;
      float: center;
@@ -28,6 +42,7 @@
    
  }
 
+ /* IMAGES STYLE */
 .bulldog {
     border-width: 10px;
     border-color: #000;
@@ -52,6 +67,7 @@
   margin-top: 10px;
 }
 
+/* TOTAL STYLE */
 .total {
   text-align: center;
   font-family: 'Bangers', cursive;
