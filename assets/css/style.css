@@ -24,7 +24,7 @@
 /* INSTRUCTIONS STYLE */
   .instructions {
     text-align: center; 
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif, bold;
   }
   
 /* CONTENT STYLE */
